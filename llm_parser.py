@@ -8,12 +8,11 @@ import json
 from typing import Dict, Any, Optional
 from dotenv import load_dotenv
 import os
+from openai import AzureOpenAI
 
 # Load environment variables
 load_dotenv()
 
-from langchain_openai import AzureChatOpenAI
-from langchain.schema import HumanMessage
 from config import AZURE_OPENAI_CONFIG
 
 logger = logging.getLogger(__name__)
@@ -22,25 +21,21 @@ class LLMParser:
     """Handles structured parsing using Azure OpenAI GPT-4o"""
     
     def __init__(self):
-        self.llm = self._initialize_llm()
+        self.client = self._initialize_client()
         self.resume_parsing_prompt = self._get_resume_parsing_prompt()
         self.jd_parsing_prompt = self._get_jd_parsing_prompt()
     
-    def _initialize_llm(self) -> AzureChatOpenAI:
+    def _initialize_client(self) -> AzureOpenAI:
         """Initialize Azure OpenAI client"""
         try:
-            llm = AzureChatOpenAI(
-                deployment_name=AZURE_OPENAI_CONFIG['deployment_name'],
-                api_version=AZURE_OPENAI_CONFIG['api_version'],
+            client = AzureOpenAI(
                 api_key=AZURE_OPENAI_CONFIG['api_key'],
-                azure_endpoint=AZURE_OPENAI_CONFIG['api_base'],
-                model_name=AZURE_OPENAI_CONFIG['model_name'],
-                temperature=AZURE_OPENAI_CONFIG['temperature'],  # 0.0 for deterministic output
-                max_tokens=AZURE_OPENAI_CONFIG['max_tokens']
+                api_version=AZURE_OPENAI_CONFIG['api_version'],
+                azure_endpoint=AZURE_OPENAI_CONFIG['api_base']
             )
             
             logger.info("Azure OpenAI client initialized successfully")
-            return llm
+            return client
             
         except Exception as e:
             logger.error(f"Failed to initialize Azure OpenAI client: {e}")
@@ -78,10 +73,16 @@ class LLMParser:
         try:
             prompt = self.resume_parsing_prompt.format(resume_text=resume_text)
             
-            response = self.llm.invoke([HumanMessage(content=prompt)])
+            response = self.client.chat.completions.create(
+                model=AZURE_OPENAI_CONFIG['deployment_name'],
+                messages=[{"role": "user", "content": prompt}],
+                temperature=AZURE_OPENAI_CONFIG['temperature'],
+                max_tokens=AZURE_OPENAI_CONFIG['max_tokens']
+            )
             
             # Parse JSON response
-            parsed_data = json.loads(response.content)
+            response_content = response.choices[0].message.content
+            parsed_data = json.loads(response_content)
             
             return {
                 'parsing_successful': True,
@@ -110,10 +111,16 @@ class LLMParser:
         try:
             prompt = self.jd_parsing_prompt.format(jd_text=jd_text)
             
-            response = self.llm.invoke([HumanMessage(content=prompt)])
+            response = self.client.chat.completions.create(
+                model=AZURE_OPENAI_CONFIG['deployment_name'],
+                messages=[{"role": "user", "content": prompt}],
+                temperature=AZURE_OPENAI_CONFIG['temperature'],
+                max_tokens=AZURE_OPENAI_CONFIG['max_tokens']
+            )
             
             # Parse JSON response
-            parsed_data = json.loads(response.content)
+            response_content = response.choices[0].message.content
+            parsed_data = json.loads(response_content)
             
             return {
                 'parsing_successful': True,
