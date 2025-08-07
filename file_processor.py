@@ -6,7 +6,6 @@ import logging
 from typing import Optional, Dict, Any
 import PyPDF2
 from docx import Document
-import magic
 import re
 from pathlib import Path
 from utils import sanitize_text
