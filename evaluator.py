@@ -135,10 +135,15 @@ class CandidateEvaluator:
         try:
             full_prompt = prompt.format(context_json=json.dumps(context, indent=2))
             
-            response = self.llm.invoke([HumanMessage(content=full_prompt)])
+            response = self.client.chat.completions.create(
+                model=AZURE_OPENAI_CONFIG['deployment_name'],
+                messages=[{"role": "user", "content": full_prompt}],
+                temperature=AZURE_OPENAI_CONFIG['temperature'],
+                max_tokens=AZURE_OPENAI_CONFIG['max_tokens']
+            )
             
             # Parse JSON response
-            evaluation_data = json.loads(response.content)
+            evaluation_data = json.loads(response.choices[0].message.content)
             return evaluation_data
             
         except json.JSONDecodeError as e:
