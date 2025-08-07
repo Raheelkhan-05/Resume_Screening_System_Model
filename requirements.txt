@@ -1,6 +1,5 @@
 # Resume Screening System Dependencies
 # Core LLM and AI libraries
-langchain-openai>=0.1.0
 openai>=1.0.0
 
 # Document processing
@@ -8,7 +7,7 @@ PyPDF2==3.0.1
 python-docx==1.1.0
 
 # NLP and embeddings
-sentence-transformers==2.3.1
+sentence-transformers>=5.0.0
 scikit-learn==1.4.0
 numpy==1.26.3
 nltk==3.8.1
