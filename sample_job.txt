@@ -1,0 +1,62 @@
+Senior Full Stack Engineer - Remote
+
+TechCorp Inc.
+Location: Remote (US/Canada)
+Employment Type: Full-time
+
+JOB SUMMARY
+We are seeking an experienced Senior Full Stack Engineer to join our engineering team. 
+You will be responsible for architecting and building scalable web applications using 
+modern technologies and leading technical initiatives.
+
+KEY RESPONSIBILITIES
+- Design and develop full-stack applications using React and Node.js
+- Build and maintain RESTful APIs and microservices architecture
+- Collaborate with product managers, designers, and other engineers
+- Mentor junior developers and participate in code reviews  
+- Optimize application performance and ensure scalability
+- Participate in on-call rotations and incident response
+- Contribute to technical documentation and best practices
+
+REQUIRED QUALIFICATIONS
+- Bachelor's degree in Computer Science, Engineering, or related field
+- 5+ years of experience in full-stack software development
+- Strong proficiency in JavaScript, React, and Node.js
+- Experience with modern database systems (PostgreSQL, MongoDB)
+- Familiarity with cloud platforms (AWS, Azure, or GCP)
+- Experience with containerization technologies (Docker, Kubernetes)
+- Strong understanding of software engineering best practices
+- Experience with agile development methodologies
+- Excellent problem-solving and communication skills
+
+PREFERRED QUALIFICATIONS
+- Master's degree in Computer Science or related field
+- 7+ years of software development experience
+- Experience with TypeScript and modern frontend frameworks
+- Knowledge of microservices architecture and distributed systems
+- Experience with CI/CD pipelines and DevOps practices
+- Previous experience in fintech or healthcare industries
+- Leadership experience and mentoring capabilities
+- Contributions to open-source projects
+
+TECHNICAL REQUIREMENTS
+- React.js, JavaScript/TypeScript, HTML5, CSS3
+- Node.js, Express.js, RESTful API design
+- PostgreSQL, MongoDB, Redis
+- AWS or Azure cloud services
+- Docker, Kubernetes
+- Git, CI/CD tools
+- Testing frameworks (Jest, Cypress)
+
+BENEFITS
+- Competitive salary range: $130,000 - $180,000
+- Equity participation and performance bonuses
+- Comprehensive health, dental, and vision insurance
+- Flexible work arrangements and unlimited PTO
+- Professional development budget ($3,000 annually)
+- Top-tier equipment and home office stipend
+
+COMPANY INFO
+TechCorp Inc. is a fast-growing technology company building next-generation 
+software solutions for enterprise customers. We value innovation, collaboration, 
+and continuous learning in a remote-first environment.
