@@ -107,8 +107,13 @@ class CandidateEvaluator:
                 context_json=json.dumps(context, indent=2)
             )
             
-            response = self.llm.invoke([HumanMessage(content=full_prompt)])
-            return response.content.strip()
+            response = self.client.chat.completions.create(
+                model=AZURE_OPENAI_CONFIG['deployment_name'],
+                messages=[{"role": "user", "content": full_prompt}],
+                temperature=AZURE_OPENAI_CONFIG['temperature'],
+                max_tokens=AZURE_OPENAI_CONFIG['max_tokens']
+            )
+            return response.choices[0].message.content.strip()
             
         except Exception as e:
             logger.error(f"Error generating candidate summary: {e}")
