@@ -1,0 +1,71 @@
+SARAH JOHNSON
+Email: sarah.johnson@email.com
+Phone: (555) 987-6543
+Location: New York, NY
+
+PROFESSIONAL SUMMARY
+Senior Software Engineer with 7+ years of experience in full-stack development, 
+specializing in React, Node.js, Python, and cloud technologies. Proven track 
+record of leading technical teams and delivering scalable solutions for fintech 
+and healthcare industries.
+
+TECHNICAL SKILLS
+• Programming Languages: JavaScript, Python, TypeScript, Java, Go
+• Frontend: React, Vue.js, Angular, HTML5, CSS3, Sass, Redux
+• Backend: Node.js, Express, Django, FastAPI, Spring Boot
+• Databases: PostgreSQL, MongoDB, MySQL, Redis
+• Cloud & DevOps: AWS, Azure, Docker, Kubernetes, Jenkins, GitLab CI
+• Tools: Git, Webpack, Jest, Cypress, Postman, Jira
+
+PROFESSIONAL EXPERIENCE
+
+Lead Software Engineer | FinTech Solutions Inc. | 2022 - Present
+• Led a team of 8 engineers in developing a real-time trading platform using React and Node.js
+• Architected and implemented microservices architecture serving 500K+ daily active users
+• Reduced system response time by 60% through performance optimization and caching strategies
+• Mentored junior developers and established code review processes
+• Technologies: React, Node.js, PostgreSQL, Redis, AWS, Docker
+
+Senior Full Stack Developer | HealthTech Innovations | 2020 - 2022
+• Developed patient management system using React frontend and Django backend
+• Implemented HIPAA-compliant data handling and security measures
+• Built RESTful APIs serving mobile and web applications with 99.9% uptime
+• Collaborated with UX designers and product managers in agile environment
+• Technologies: React, Django, PostgreSQL, AWS, Docker, Jest
+
+Software Engineer | TechStart Solutions | 2018 - 2020
+• Built responsive web applications using modern JavaScript frameworks
+• Developed automated testing suites reducing deployment bugs by 45%
+• Participated in on-call rotations and incident response procedures
+• Contributed to open-source projects and technical documentation
+• Technologies: Vue.js, Node.js, MongoDB, Express, Docker
+
+EDUCATION
+Master of Science in Computer Science
+Stanford University | 2018
+GPA: 3.8/4.0
+Thesis: "Machine Learning Applications in Real-time Systems"
+
+Bachelor of Science in Software Engineering  
+University of California, Berkeley | 2016
+GPA: 3.7/4.0
+Dean's List: Fall 2015, Spring 2016
+
+PROJECTS
+Cryptocurrency Trading Bot
+• Developed algorithmic trading bot using Python and ML models
+• Integrated with multiple exchange APIs for real-time trading
+• Technologies: Python, TensorFlow, REST APIs, MongoDB
+• Duration: 6 months
+
+Open Source Contribution - React Performance Library
+• Contributed to popular React optimization library with 10K+ GitHub stars
+• Implemented lazy loading and memoization features
+• Technologies: React, JavaScript, Webpack, Jest
+• Impact: Used by 50+ companies globally
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect - Professional (2023)
+• Certified Kubernetes Administrator (CKA) (2022) 
+• Google Cloud Professional Developer (2021)
+• Certified Scrum Master (CSM) (2020)
