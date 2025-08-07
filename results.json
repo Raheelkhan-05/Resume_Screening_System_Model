@@ -1,0 +1,515 @@
+{
+  "input_files": {
+    "resume_path": "sample_resume.txt",
+    "jd_path": "sample_job.txt",
+    "jd_text_provided": false
+  },
+  "processing_steps": {
+    "resume_extraction": {
+      "file_path": "sample_resume.txt",
+      "file_type": ".txt",
+      "raw_text": "SARAH JOHNSON\nEmail: sarah.johnson@email.com\nPhone: (555) 987-6543\nLocation: New York, NY\n\nPROFESSIONAL SUMMARY\nSenior Software Engineer with 7+ years of experience in full-stack development, \nspecializing in React, Node.js, Python, and cloud technologies. Proven track \nrecord of leading technical teams and delivering scalable solutions for fintech \nand healthcare industries.\n\nTECHNICAL SKILLS\n• Programming Languages: JavaScript, Python, TypeScript, Java, Go\n• Frontend: React, Vue.js, Angular, HTML5, CSS3, Sass, Redux\n• Backend: Node.js, Express, Django, FastAPI, Spring Boot\n• Databases: PostgreSQL, MongoDB, MySQL, Redis\n• Cloud & DevOps: AWS, Azure, Docker, Kubernetes, Jenkins, GitLab CI\n• Tools: Git, Webpack, Jest, Cypress, Postman, Jira\n\nPROFESSIONAL EXPERIENCE\n\nLead Software Engineer | FinTech Solutions Inc. | 2022 - Present\n• Led a team of 8 engineers in developing a real-time trading platform using React and Node.js\n• Architected and implemented microservices architecture serving 500K+ daily active users\n• Reduced system response time by 60% through performance optimization and caching strategies\n• Mentored junior developers and established code review processes\n• Technologies: React, Node.js, PostgreSQL, Redis, AWS, Docker\n\nSenior Full Stack Developer | HealthTech Innovations | 2020 - 2022\n• Developed patient management system using React frontend and Django backend\n• Implemented HIPAA-compliant data handling and security measures\n• Built RESTful APIs serving mobile and web applications with 99.9% uptime\n• Collaborated with UX designers and product managers in agile environment\n• Technologies: React, Django, PostgreSQL, AWS, Docker, Jest\n\nSoftware Engineer | TechStart Solutions | 2018 - 2020\n• Built responsive web applications using modern JavaScript frameworks\n• Developed automated testing suites reducing deployment bugs by 45%\n• Participated in on-call rotations and incident response procedures\n• Contributed to open-source projects and technical documentation\n• Technologies: Vue.js, Node.js, MongoDB, Express, Docker\n\nEDUCATION\nMaster of Science in Computer Science\nStanford University | 2018\nGPA: 3.8/4.0\nThesis: \"Machine Learning Applications in Real-time Systems\"\n\nBachelor of Science in Software Engineering  \nUniversity of California, Berkeley | 2016\nGPA: 3.7/4.0\nDean's List: Fall 2015, Spring 2016\n\nPROJECTS\nCryptocurrency Trading Bot\n• Developed algorithmic trading bot using Python and ML models\n• Integrated with multiple exchange APIs for real-time trading\n• Technologies: Python, TensorFlow, REST APIs, MongoDB\n• Duration: 6 months\n\nOpen Source Contribution - React Performance Library\n• Contributed to popular React optimization library with 10K+ GitHub stars\n• Implemented lazy loading and memoization features\n• Technologies: React, JavaScript, Webpack, Jest\n• Impact: Used by 50+ companies globally\n\nCERTIFICATIONS\n• AWS Certified Solutions Architect - Professional (2023)\n• Certified Kubernetes Administrator (CKA) (2022) \n• Google Cloud Professional Developer (2021)\n• Certified Scrum Master (CSM) (2020)",
+      "cleaned_text": "SARAH JOHNSON\nEmail: sarah.johnson@email.com\nPhone: (555) 987-6543\nLocation: New York, NY\n\nPROFESSIONAL SUMMARY\nSenior Software Engineer with 7+ years of experience in full-stack development, \nspecializing in React, Node.js, Python, and cloud technologies. Proven track \nrecord of leading technical teams and delivering scalable solutions for fintech \nand healthcare industries.\n\nTECHNICAL SKILLS\n• Programming Languages: JavaScript, Python, TypeScript, Java, Go\n• Frontend: React, Vue.js, Angular, HTML5, CSS3, Sass, Redux\n• Backend: Node.js, Express, Django, FastAPI, Spring Boot\n• Databases: PostgreSQL, MongoDB, MySQL, Redis\n• Cloud & DevOps: AWS, Azure, Docker, Kubernetes, Jenkins, GitLab CI\n• Tools: Git, Webpack, Jest, Cypress, Postman, Jira\n\nPROFESSIONAL EXPERIENCE\n\nLead Software Engineer | FinTech Solutions Inc. | 2022 - Present\n• Led a team of 8 engineers in developing a real-time trading platform using React and Node.js\n• Architected and implemented microservices architecture serving 500K+ daily active users\n• Reduced system response time by 60% through performance optimization and caching strategies\n• Mentored junior developers and established code review processes\n• Technologies: React, Node.js, PostgreSQL, Redis, AWS, Docker\n\nSenior Full Stack Developer | HealthTech Innovations | 2020 - 2022\n• Developed patient management system using React frontend and Django backend\n• Implemented HIPAA-compliant data handling and security measures\n• Built RESTful APIs serving mobile and web applications with 99.9% uptime\n• Collaborated with UX designers and product managers in agile environment\n• Technologies: React, Django, PostgreSQL, AWS, Docker, Jest\n\nSoftware Engineer | TechStart Solutions | 2018 - 2020\n• Built responsive web applications using modern JavaScript frameworks\n• Developed automated testing suites reducing deployment bugs by 45%\n• Participated in on-call rotations and incident response procedures\n• Contributed to open-source projects and technical documentation\n• Technologies: Vue.js, Node.js, MongoDB, Express, Docker\n\nEDUCATION\nMaster of Science in Computer Science\nStanford University | 2018\nGPA: 3.8/4.0\nThesis: \"Machine Learning Applications in Real-time Systems\"\n\nBachelor of Science in Software Engineering \nUniversity of California, Berkeley | 2016\nGPA: 3.7/4.0\nDean's List: Fall 2015, Spring 2016\n\nPROJECTS\nCryptocurrency Trading Bot\n• Developed algorithmic trading bot using Python and ML models\n• Integrated with multiple exchange APIs for real-time trading\n• Technologies: Python, TensorFlow, REST APIs, MongoDB\n• Duration: 6 months\n\nOpen Source Contribution - React Performance Library\n• Contributed to popular React optimization library with 10K+ GitHub stars\n• Implemented lazy loading and memoization features\n• Technologies: React, JavaScript, Webpack, Jest\n• Impact: Used by 50+ companies globally\n\nCERTIFICATIONS\n• AWS Certified Solutions Architect - Professional (2023)\n• Certified Kubernetes Administrator (CKA) (2022) \n• Google Cloud Professional Developer (2021)\n• Certified Scrum Master (CSM) (2020)",
+      "word_count": 423,
+      "char_count": 3065,
+      "extraction_successful": true,
+      "error_message": null
+    },
+    "jd_extraction": {
+      "file_path": "sample_job.txt",
+      "file_type": ".txt",
+      "raw_text": "Senior Full Stack Engineer - Remote\n\nTechCorp Inc.\nLocation: Remote (US/Canada)\nEmployment Type: Full-time\n\nJOB SUMMARY\nWe are seeking an experienced Senior Full Stack Engineer to join our engineering team. \nYou will be responsible for architecting and building scalable web applications using \nmodern technologies and leading technical initiatives.\n\nKEY RESPONSIBILITIES\n- Design and develop full-stack applications using React and Node.js\n- Build and maintain RESTful APIs and microservices architecture\n- Collaborate with product managers, designers, and other engineers\n- Mentor junior developers and participate in code reviews  \n- Optimize application performance and ensure scalability\n- Participate in on-call rotations and incident response\n- Contribute to technical documentation and best practices\n\nREQUIRED QUALIFICATIONS\n- Bachelor's degree in Computer Science, Engineering, or related field\n- 5+ years of experience in full-stack software development\n- Strong proficiency in JavaScript, React, and Node.js\n- Experience with modern database systems (PostgreSQL, MongoDB)\n- Familiarity with cloud platforms (AWS, Azure, or GCP)\n- Experience with containerization technologies (Docker, Kubernetes)\n- Strong understanding of software engineering best practices\n- Experience with agile development methodologies\n- Excellent problem-solving and communication skills\n\nPREFERRED QUALIFICATIONS\n- Master's degree in Computer Science or related field\n- 7+ years of software development experience\n- Experience with TypeScript and modern frontend frameworks\n- Knowledge of microservices architecture and distributed systems\n- Experience with CI/CD pipelines and DevOps practices\n- Previous experience in fintech or healthcare industries\n- Leadership experience and mentoring capabilities\n- Contributions to open-source projects\n\nTECHNICAL REQUIREMENTS\n- React.js, JavaScript/TypeScript, HTML5, CSS3\n- Node.js, Express.js, RESTful API design\n- PostgreSQL, MongoDB, Redis\n- AWS or Azure cloud services\n- Docker, Kubernetes\n- Git, CI/CD tools\n- Testing frameworks (Jest, Cypress)\n\nBENEFITS\n- Competitive salary range: $130,000 - $180,000\n- Equity participation and performance bonuses\n- Comprehensive health, dental, and vision insurance\n- Flexible work arrangements and unlimited PTO\n- Professional development budget ($3,000 annually)\n- Top-tier equipment and home office stipend\n\nCOMPANY INFO\nTechCorp Inc. is a fast-growing technology company building next-generation \nsoftware solutions for enterprise customers. We value innovation, collaboration, \nand continuous learning in a remote-first environment.",
+      "cleaned_text": "Senior Full Stack Engineer - Remote\n\nTechCorp Inc.\nLocation: Remote (US/Canada)\nEmployment Type: Full-time\n\nJOB SUMMARY\nWe are seeking an experienced Senior Full Stack Engineer to join our engineering team. \nYou will be responsible for architecting and building scalable web applications using \nmodern technologies and leading technical initiatives.\n\nKEY RESPONSIBILITIES\n- Design and develop full-stack applications using React and Node.js\n- Build and maintain RESTful APIs and microservices architecture\n- Collaborate with product managers, designers, and other engineers\n- Mentor junior developers and participate in code reviews \n- Optimize application performance and ensure scalability\n- Participate in on-call rotations and incident response\n- Contribute to technical documentation and best practices\n\nREQUIRED QUALIFICATIONS\n- Bachelor's degree in Computer Science, Engineering, or related field\n- 5+ years of experience in full-stack software development\n- Strong proficiency in JavaScript, React, and Node.js\n- Experience with modern database systems (PostgreSQL, MongoDB)\n- Familiarity with cloud platforms (AWS, Azure, or GCP)\n- Experience with containerization technologies (Docker, Kubernetes)\n- Strong understanding of software engineering best practices\n- Experience with agile development methodologies\n- Excellent problem-solving and communication skills\n\nPREFERRED QUALIFICATIONS\n- Master's degree in Computer Science or related field\n- 7+ years of software development experience\n- Experience with TypeScript and modern frontend frameworks\n- Knowledge of microservices architecture and distributed systems\n- Experience with CI/CD pipelines and DevOps practices\n- Previous experience in fintech or healthcare industries\n- Leadership experience and mentoring capabilities\n- Contributions to open-source projects\n\nTECHNICAL REQUIREMENTS\n- React.js, JavaScript/TypeScript, HTML5, CSS3\n- Node.js, Express.js, RESTful API design\n- PostgreSQL, MongoDB, Redis\n- AWS or Azure cloud services\n- Docker, Kubernetes\n- Git, CI/CD tools\n- Testing frameworks (Jest, Cypress)\n\nBENEFITS\n- Competitive salary range: $130,000 - $180,000\n- Equity participation and performance bonuses\n- Comprehensive health, dental, and vision insurance\n- Flexible work arrangements and unlimited PTO\n- Professional development budget ($3,000 annually)\n- Top-tier equipment and home office stipend\n\nCOMPANY INFO\nTechCorp Inc. is a fast-growing technology company building next-generation \nsoftware solutions for enterprise customers. We value innovation, collaboration, \nand continuous learning in a remote-first environment.",
+      "word_count": 347,
+      "char_count": 2608,
+      "extraction_successful": true,
+      "error_message": null
+    },
+    "resume_parsing": {
+      "parsing_successful": true,
+      "error_message": null,
+      "parsed_data": {
+        "personal_info": {
+          "name": "Sarah Johnson",
+          "email": "sarah.johnson@email.com",
+          "phone": "(555) 987-6543",
+          "location": "New York, NY"
+        },
+        "summary": "Senior Software Engineer with 7+ years of experience in full-stack development, specializing in React, Node.js, Python, and cloud technologies. Proven track record of leading technical teams and delivering scalable solutions for fintech and healthcare industries.",
+        "skills": {
+          "technical_skills": [
+            "JavaScript",
+            "Python",
+            "TypeScript",
+            "Java",
+            "Go",
+            "React",
+            "Vue.js",
+            "Angular",
+            "HTML5",
+            "CSS3",
+            "Sass",
+            "Redux",
+            "Node.js",
+            "Express",
+            "Django",
+            "FastAPI",
+            "Spring Boot",
+            "PostgreSQL",
+            "MongoDB",
+            "MySQL",
+            "Redis",
+            "AWS",
+            "Azure",
+            "Docker",
+            "Kubernetes",
+            "Jenkins",
+            "GitLab CI"
+          ],
+          "soft_skills": [],
+          "tools_and_technologies": [
+            "Git",
+            "Webpack",
+            "Jest",
+            "Cypress",
+            "Postman",
+            "Jira"
+          ],
+          "programming_languages": [
+            "JavaScript",
+            "Python",
+            "TypeScript",
+            "Java",
+            "Go"
+          ]
+        },
+        "experience": [
+          {
+            "job_title": "Lead Software Engineer",
+            "company": "FinTech Solutions Inc.",
+            "duration": "2022 - Present",
+            "responsibilities": [
+              "Led a team of 8 engineers in developing a real-time trading platform using React and Node.js",
+              "Architected and implemented microservices architecture serving 500K+ daily active users",
+              "Reduced system response time by 60% through performance optimization and caching strategies",
+              "Mentored junior developers and established code review processes"
+            ],
+            "technologies_used": [
+              "React",
+              "Node.js",
+              "PostgreSQL",
+              "Redis",
+              "AWS",
+              "Docker"
+            ]
+          },
+          {
+            "job_title": "Senior Full Stack Developer",
+            "company": "HealthTech Innovations",
+            "duration": "2020 - 2022",
+            "responsibilities": [
+              "Developed patient management system using React frontend and Django backend",
+              "Implemented HIPAA-compliant data handling and security measures",
+              "Built RESTful APIs serving mobile and web applications with 99.9% uptime",
+              "Collaborated with UX designers and product managers in agile environment"
+            ],
+            "technologies_used": [
+              "React",
+              "Django",
+              "PostgreSQL",
+              "AWS",
+              "Docker",
+              "Jest"
+            ]
+          },
+          {
+            "job_title": "Software Engineer",
+            "company": "TechStart Solutions",
+            "duration": "2018 - 2020",
+            "responsibilities": [
+              "Built responsive web applications using modern JavaScript frameworks",
+              "Developed automated testing suites reducing deployment bugs by 45%",
+              "Participated in on-call rotations and incident response procedures",
+              "Contributed to open-source projects and technical documentation"
+            ],
+            "technologies_used": [
+              "Vue.js",
+              "Node.js",
+              "MongoDB",
+              "Express",
+              "Docker"
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree": "Master of Science in Computer Science",
+            "institution": "Stanford University",
+            "year": "2018",
+            "gpa": "3.8/4.0",
+            "relevant_coursework": []
+          },
+          {
+            "degree": "Bachelor of Science in Software Engineering",
+            "institution": "University of California, Berkeley",
+            "year": "2016",
+            "gpa": "3.7/4.0",
+            "relevant_coursework": []
+          }
+        ],
+        "projects": [
+          {
+            "project_name": "Cryptocurrency Trading Bot",
+            "description": "Developed algorithmic trading bot using Python and ML models. Integrated with multiple exchange APIs for real-time trading.",
+            "technologies": [
+              "Python",
+              "TensorFlow",
+              "REST APIs",
+              "MongoDB"
+            ],
+            "duration": "6 months"
+          },
+          {
+            "project_name": "Open Source Contribution - React Performance Library",
+            "description": "Contributed to popular React optimization library with 10K+ GitHub stars. Implemented lazy loading and memoization features.",
+            "technologies": [
+              "React",
+              "JavaScript",
+              "Webpack",
+              "Jest"
+            ],
+            "duration": ""
+          }
+        ],
+        "certifications": [
+          {
+            "certification_name": "AWS Certified Solutions Architect - Professional",
+            "issuing_organization": "AWS",
+            "date_obtained": "2023",
+            "expiry_date": ""
+          },
+          {
+            "certification_name": "Certified Kubernetes Administrator (CKA)",
+            "issuing_organization": "Cloud Native Computing Foundation",
+            "date_obtained": "2022",
+            "expiry_date": ""
+          },
+          {
+            "certification_name": "Google Cloud Professional Developer",
+            "issuing_organization": "Google Cloud",
+            "date_obtained": "2021",
+            "expiry_date": ""
+          },
+          {
+            "certification_name": "Certified Scrum Master (CSM)",
+            "issuing_organization": "Scrum Alliance",
+            "date_obtained": "2020",
+            "expiry_date": ""
+          }
+        ]
+      },
+      "document_type": "resume"
+    },
+    "jd_parsing": {
+      "parsing_successful": true,
+      "error_message": null,
+      "parsed_data": {
+        "job_info": {
+          "job_title": "Senior Full Stack Engineer",
+          "company": "TechCorp Inc.",
+          "location": "Remote (US/Canada)",
+          "employment_type": "Full-time",
+          "department": ""
+        },
+        "job_summary": "We are seeking an experienced Senior Full Stack Engineer to join our engineering team. You will be responsible for architecting and building scalable web applications using modern technologies and leading technical initiatives.",
+        "responsibilities": [
+          "Design and develop full-stack applications using React and Node.js",
+          "Build and maintain RESTful APIs and microservices architecture",
+          "Collaborate with product managers, designers, and other engineers",
+          "Mentor junior developers and participate in code reviews",
+          "Optimize application performance and ensure scalability",
+          "Participate in on-call rotations and incident response",
+          "Contribute to technical documentation and best practices"
+        ],
+        "required_qualifications": {
+          "experience_level": "5+ years of experience in full-stack software development",
+          "education": [
+            "Bachelor's degree in Computer Science, Engineering, or related field"
+          ],
+          "technical_skills": [
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Modern database systems (PostgreSQL, MongoDB)",
+            "Cloud platforms (AWS, Azure, or GCP)",
+            "Containerization technologies (Docker, Kubernetes)"
+          ],
+          "soft_skills": [
+            "Strong understanding of software engineering best practices",
+            "Experience with agile development methodologies",
+            "Excellent problem-solving and communication skills"
+          ],
+          "certifications": [],
+          "tools_and_technologies": [
+            "React.js",
+            "JavaScript",
+            "Node.js",
+            "PostgreSQL",
+            "MongoDB",
+            "Redis",
+            "AWS or Azure cloud services",
+            "Docker",
+            "Kubernetes",
+            "Git",
+            "CI/CD tools",
+            "Testing frameworks (Jest, Cypress)"
+          ]
+        },
+        "preferred_qualifications": {
+          "experience_level": "7+ years of software development experience",
+          "education": [
+            "Master's degree in Computer Science or related field"
+          ],
+          "technical_skills": [
+            "TypeScript",
+            "Modern frontend frameworks",
+            "Knowledge of microservices architecture and distributed systems",
+            "Experience with CI/CD pipelines and DevOps practices"
+          ],
+          "soft_skills": [
+            "Leadership experience and mentoring capabilities"
+          ],
+          "certifications": [],
+          "tools_and_technologies": [],
+          "industry_experience": [
+            "Fintech",
+            "Healthcare"
+          ],
+          "other": [
+            "Contributions to open-source projects"
+          ]
+        },
+        "benefits": [
+          "Competitive salary range: $130,000 - $180,000",
+          "Equity participation and performance bonuses",
+          "Comprehensive health, dental, and vision insurance",
+          "Flexible work arrangements and unlimited PTO",
+          "Professional development budget ($3,000 annually)",
+          "Top-tier equipment and home office stipend"
+        ],
+        "company_info": {
+          "company_description": "TechCorp Inc. is a fast-growing technology company building next-generation software solutions for enterprise customers. We value innovation, collaboration, and continuous learning in a remote-first environment.",
+          "company_size": "",
+          "industry": ""
+        }
+      },
+      "document_type": "job_description"
+    },
+    "preprocessing": {
+      "resume": {
+        "original_text": "SARAH JOHNSON\nEmail: sarah.johnson@email.com\nPhone: (555) 987-6543\nLocation: New York, NY\n\nPROFESSIONAL SUMMARY\nSenior Software Engineer with 7+ years of experience in full-stack development, \nspecializing in React, Node.js, Python, and cloud technologies. Proven track \nrecord of leading technical teams and delivering scalable solutions for fintech \nand healthcare industries.\n\nTECHNICAL SKILLS\n• Programming Languages: JavaScript, Python, TypeScript, Java, Go\n• Frontend: React, Vue.js, Angular, HTML5, CSS3, Sass, Redux\n• Backend: Node.js, Express, Django, FastAPI, Spring Boot\n• Databases: PostgreSQL, MongoDB, MySQL, Redis\n• Cloud & DevOps: AWS, Azure, Docker, Kubernetes, Jenkins, GitLab CI\n• Tools: Git, Webpack, Jest, Cypress, Postman, Jira\n\nPROFESSIONAL EXPERIENCE\n\nLead Software Engineer | FinTech Solutions Inc. | 2022 - Present\n• Led a team of 8 engineers in developing a real-time trading platform using React and Node.js\n• Architected and implemented microservices architecture serving 500K+ daily active users\n• Reduced system response time by 60% through performance optimization and caching strategies\n• Mentored junior developers and established code review processes\n• Technologies: React, Node.js, PostgreSQL, Redis, AWS, Docker\n\nSenior Full Stack Developer | HealthTech Innovations | 2020 - 2022\n• Developed patient management system using React frontend and Django backend\n• Implemented HIPAA-compliant data handling and security measures\n• Built RESTful APIs serving mobile and web applications with 99.9% uptime\n• Collaborated with UX designers and product managers in agile environment\n• Technologies: React, Django, PostgreSQL, AWS, Docker, Jest\n\nSoftware Engineer | TechStart Solutions | 2018 - 2020\n• Built responsive web applications using modern JavaScript frameworks\n• Developed automated testing suites reducing deployment bugs by 45%\n• Participated in on-call rotations and incident response procedures\n• Contributed to open-source projects and technical documentation\n• Technologies: Vue.js, Node.js, MongoDB, Express, Docker\n\nEDUCATION\nMaster of Science in Computer Science\nStanford University | 2018\nGPA: 3.8/4.0\nThesis: \"Machine Learning Applications in Real-time Systems\"\n\nBachelor of Science in Software Engineering \nUniversity of California, Berkeley | 2016\nGPA: 3.7/4.0\nDean's List: Fall 2015, Spring 2016\n\nPROJECTS\nCryptocurrency Trading Bot\n• Developed algorithmic trading bot using Python and ML models\n• Integrated with multiple exchange APIs for real-time trading\n• Technologies: Python, TensorFlow, REST APIs, MongoDB\n• Duration: 6 months\n\nOpen Source Contribution - React Performance Library\n• Contributed to popular React optimization library with 10K+ GitHub stars\n• Implemented lazy loading and memoization features\n• Technologies: React, JavaScript, Webpack, Jest\n• Impact: Used by 50+ companies globally\n\nCERTIFICATIONS\n• AWS Certified Solutions Architect - Professional (2023)\n• Certified Kubernetes Administrator (CKA) (2022) \n• Google Cloud Professional Developer (2021)\n• Certified Scrum Master (CSM) (2020)",
+        "processed_text": "sarah johnson email: sarah.johnson email.com phone: (555) 987-6543 location: new york, ny professional summary senior software engineer 7 year experience full-stack development, specializing react, node.js, python, cloud technologies. proven track record leading technical team delivering scalable solution fintech healthcare industries. technical skill programming languages: javascript, python, typescript, java, go frontend: react, vue.js, angular, html5, css3, sass, redux backend: node.js, express, django, fastapi, spring boot databases: postgresql, mongodb, mysql, redis cloud devops: aws, azure, docker, kubernetes, jenkins, gitlab ci tools: git, webpack, jest, cypress, postman, jira professional experience lead software engineer fintech solution inc. 2022 - present led team 8 engineer developing real-time trading platform using react node.js architected implemented microservices architecture serving 500k daily active user reduced system response time 60 performance optimization caching strategy mentored junior developer established code review process technologies: react, node.js, postgresql, redis, aws, docker senior full stack developer healthtech innovation 2020 - 2022 developed patient management system using react frontend django backend implemented hipaa-compliant data handling security measure built restful apis serving mobile web application 99.9 uptime collaborated ux designer product manager agile environment technologies: react, django, postgresql, aws, docker, jest software engineer techstart solution 2018 - 2020 built responsive web application using modern javascript framework developed automated testing suite reducing deployment bug 45 participated on-call rotation incident response procedure contributed open-source project technical documentation technologies: vue.js, node.js, mongodb, express, docker education master science computer science stanford university 2018 gpa: 3.8 4.0 thesis: machine learning application real-time system bachelor science software engineering university california, berkeley 2016 gpa: 3.7 4.0 dean list: fall 2015, spring 2016 project cryptocurrency trading bot developed algorithmic trading bot using python ml model integrated multiple exchange apis real-time trading technologies: python, tensorflow, rest apis, mongodb duration: 6 month open source contribution - react performance library contributed popular react optimization library 10k github star implemented lazy loading memoization feature technologies: react, javascript, webpack, jest impact: used 50 company globally certification aws certified solution architect - professional (2023) certified kubernetes administrator (cka) (2022) google cloud professional developer (2021) certified scrum master (csm) (2020)",
+        "preprocessing_applied": [
+          "lowercase",
+          "normalize_whitespace",
+          "remove_special_chars",
+          "remove_stopwords",
+          "lemmatize"
+        ],
+        "word_count_before": 423,
+        "word_count_after": 340
+      },
+      "job_description": {
+        "original_text": "Senior Full Stack Engineer - Remote\n\nTechCorp Inc.\nLocation: Remote (US/Canada)\nEmployment Type: Full-time\n\nJOB SUMMARY\nWe are seeking an experienced Senior Full Stack Engineer to join our engineering team. \nYou will be responsible for architecting and building scalable web applications using \nmodern technologies and leading technical initiatives.\n\nKEY RESPONSIBILITIES\n- Design and develop full-stack applications using React and Node.js\n- Build and maintain RESTful APIs and microservices architecture\n- Collaborate with product managers, designers, and other engineers\n- Mentor junior developers and participate in code reviews \n- Optimize application performance and ensure scalability\n- Participate in on-call rotations and incident response\n- Contribute to technical documentation and best practices\n\nREQUIRED QUALIFICATIONS\n- Bachelor's degree in Computer Science, Engineering, or related field\n- 5+ years of experience in full-stack software development\n- Strong proficiency in JavaScript, React, and Node.js\n- Experience with modern database systems (PostgreSQL, MongoDB)\n- Familiarity with cloud platforms (AWS, Azure, or GCP)\n- Experience with containerization technologies (Docker, Kubernetes)\n- Strong understanding of software engineering best practices\n- Experience with agile development methodologies\n- Excellent problem-solving and communication skills\n\nPREFERRED QUALIFICATIONS\n- Master's degree in Computer Science or related field\n- 7+ years of software development experience\n- Experience with TypeScript and modern frontend frameworks\n- Knowledge of microservices architecture and distributed systems\n- Experience with CI/CD pipelines and DevOps practices\n- Previous experience in fintech or healthcare industries\n- Leadership experience and mentoring capabilities\n- Contributions to open-source projects\n\nTECHNICAL REQUIREMENTS\n- React.js, JavaScript/TypeScript, HTML5, CSS3\n- Node.js, Express.js, RESTful API design\n- PostgreSQL, MongoDB, Redis\n- AWS or Azure cloud services\n- Docker, Kubernetes\n- Git, CI/CD tools\n- Testing frameworks (Jest, Cypress)\n\nBENEFITS\n- Competitive salary range: $130,000 - $180,000\n- Equity participation and performance bonuses\n- Comprehensive health, dental, and vision insurance\n- Flexible work arrangements and unlimited PTO\n- Professional development budget ($3,000 annually)\n- Top-tier equipment and home office stipend\n\nCOMPANY INFO\nTechCorp Inc. is a fast-growing technology company building next-generation \nsoftware solutions for enterprise customers. We value innovation, collaboration, \nand continuous learning in a remote-first environment.",
+        "processed_text": "senior full stack engineer - remote techcorp inc. location: remote (us canada) employment type: full-time job summary seeking experienced senior full stack engineer join engineering team. responsible architecting building scalable web application using modern technology leading technical initiatives. key responsibility - design develop full-stack application using react node.js - build maintain restful apis microservices architecture - collaborate product managers, designers, engineer - mentor junior developer participate code review - optimize application performance ensure scalability - participate on-call rotation incident response - contribute technical documentation best practice required qualification - bachelor degree computer science, engineering, related field - 5 year experience full-stack software development - strong proficiency javascript, react, node.js - experience modern database system (postgresql, mongodb) - familiarity cloud platform (aws, azure, gcp) - experience containerization technology (docker, kubernetes) - strong understanding software engineering best practice - experience agile development methodology - excellent problem-solving communication skill preferred qualification - master degree computer science related field - 7 year software development experience - experience typescript modern frontend framework - knowledge microservices architecture distributed system - experience ci cd pipeline devops practice - previous experience fintech healthcare industry - leadership experience mentoring capability - contribution open-source project technical requirement - react.js, javascript typescript, html5, css3 - node.js, express.js, restful api design - postgresql, mongodb, redis - aws azure cloud service - docker, kubernetes - git, ci cd tool - testing framework (jest, cypress) benefit - competitive salary range: 130,000 - 180,000 - equity participation performance bonus - comprehensive health, dental, vision insurance - flexible work arrangement unlimited pto - professional development budget ( 3,000 annually) - top-tier equipment home office stipend company info techcorp inc. fast-growing technology company building next-generation software solution enterprise customers. value innovation, collaboration, continuous learning remote-first environment.",
+        "preprocessing_applied": [
+          "lowercase",
+          "normalize_whitespace",
+          "remove_special_chars",
+          "remove_stopwords",
+          "lemmatize"
+        ],
+        "word_count_before": 347,
+        "word_count_after": 289
+      }
+    },
+    "scoring": {
+      "ats_score": 57.84,
+      "section_scores": {
+        "skills": 0.5985459089279175,
+        "experience": 0.6992628574371338,
+        "education": 0.6933874487876892,
+        "extras": 0.0,
+        "overall": 0.8395136594772339
+      },
+      "detailed_analysis": {
+        "score_breakdown": {
+          "extras": {
+            "similarity_score": 0.0,
+            "weight": 0.1,
+            "weighted_contribution": 0.0
+          }
+        },
+        "strengths": [],
+        "weaknesses": [
+          "Extras: 0.00 similarity"
+        ],
+        "missing_skills": [],
+        "recommendations": []
+      },
+      "scoring_weights": {
+        "skills_match": 0.5,
+        "experience_relevance": 0.3,
+        "education_match": 0.1,
+        "extras": 0.1
+      },
+      "embedding_model": "all-MiniLM-L6-v2",
+      "computation_successful": true,
+      "error_message": null
+    },
+    "evaluation": {
+      "candidate_summary": "Unable to generate candidate summary due to processing error.",
+      "section_evaluation": {
+        "skills_evaluation": {
+          "alignment_score": 0.0,
+          "strengths": [],
+          "gaps": [
+            "Unable to analyze due to processing error"
+          ],
+          "assessment": "Section evaluation unavailable due to processing error."
+        },
+        "experience_evaluation": {
+          "alignment_score": 0.0,
+          "relevant_experience": [],
+          "experience_gaps": [
+            "Unable to analyze due to processing error"
+          ],
+          "assessment": "Experience evaluation unavailable due to processing error."
+        },
+        "education_evaluation": {
+          "alignment_score": 0.0,
+          "matching_qualifications": [],
+          "education_gaps": [
+            "Unable to analyze due to processing error"
+          ],
+          "assessment": "Education evaluation unavailable due to processing error."
+        },
+        "extras_evaluation": {
+          "alignment_score": 0.0,
+          "valuable_additions": [],
+          "recommended_additions": [
+            "Unable to analyze due to processing error"
+          ],
+          "assessment": "Additional qualifications evaluation unavailable due to processing error."
+        }
+      },
+      "recommendations": [
+        {
+          "category": "General",
+          "priority": "High",
+          "title": "Review and optimize resume content",
+          "description": "Unable to generate specific recommendations due to processing error. Please review resume manually.",
+          "specific_actions": [
+            "Ensure all relevant skills are clearly listed",
+            "Quantify achievements with specific metrics",
+            "Align experience descriptions with job requirements"
+          ],
+          "expected_impact": 5,
+          "difficulty": "Medium",
+          "rationale": "General resume optimization typically improves ATS scores"
+        }
+      ],
+      "predicted_improved_score": 62.84,
+      "evaluation_successful": true,
+      "error_message": null
+    }
+  },
+  "final_results": {
+    "ats_score": 57.84,
+    "candidate_summary": "Unable to generate candidate summary due to processing error.",
+    "section_evaluation": {
+      "skills_evaluation": {
+        "alignment_score": 0.0,
+        "strengths": [],
+        "gaps": [
+          "Unable to analyze due to processing error"
+        ],
+        "assessment": "Section evaluation unavailable due to processing error."
+      },
+      "experience_evaluation": {
+        "alignment_score": 0.0,
+        "relevant_experience": [],
+        "experience_gaps": [
+          "Unable to analyze due to processing error"
+        ],
+        "assessment": "Experience evaluation unavailable due to processing error."
+      },
+      "education_evaluation": {
+        "alignment_score": 0.0,
+        "matching_qualifications": [],
+        "education_gaps": [
+          "Unable to analyze due to processing error"
+        ],
+        "assessment": "Education evaluation unavailable due to processing error."
+      },
+      "extras_evaluation": {
+        "alignment_score": 0.0,
+        "valuable_additions": [],
+        "recommended_additions": [
+          "Unable to analyze due to processing error"
+        ],
+        "assessment": "Additional qualifications evaluation unavailable due to processing error."
+      }
+    },
+    "section_scores": {
+      "skills": 0.5985459089279175,
+      "experience": 0.6992628574371338,
+      "education": 0.6933874487876892,
+      "extras": 0.0,
+      "overall": 0.8395136594772339
+    },
+    "scoring_weights": {
+      "skills_match": 0.5,
+      "experience_relevance": 0.3,
+      "education_match": 0.1,
+      "extras": 0.1
+    },
+    "recommendations": [
+      {
+        "category": "General",
+        "priority": "High",
+        "title": "Review and optimize resume content",
+        "description": "Unable to generate specific recommendations due to processing error. Please review resume manually.",
+        "specific_actions": [
+          "Ensure all relevant skills are clearly listed",
+          "Quantify achievements with specific metrics",
+          "Align experience descriptions with job requirements"
+        ],
+        "expected_impact": 5,
+        "difficulty": "Medium",
+        "rationale": "General resume optimization typically improves ATS scores"
+      }
+    ],
+    "predicted_improved_score": 62.84,
+    "detailed_analysis": {
+      "score_breakdown": {
+        "extras": {
+          "similarity_score": 0.0,
+          "weight": 0.1,
+          "weighted_contribution": 0.0
+        }
+      },
+      "strengths": [],
+      "weaknesses": [
+        "Extras: 0.00 similarity"
+      ],
+      "missing_skills": [],
+      "recommendations": []
+    }
+  },
+  "metadata": {
+    "timestamp": "2025-08-07T04:31:19.959024",
+    "version": "1.0.0",
+    "system": "Resume Screening System"
+  }
+}
