@@ -82,6 +82,14 @@ class LLMParser:
             
             # Parse JSON response
             response_content = response.choices[0].message.content
+            logger.info(f"Resume parsing response: {response_content[:500]}...")
+            
+            # Try to extract JSON from response if it's wrapped in markdown
+            if "```json" in response_content:
+                start = response_content.find("```json") + 7
+                end = response_content.find("```", start)
+                response_content = response_content[start:end].strip()
+            
             parsed_data = json.loads(response_content)
             
             return {
