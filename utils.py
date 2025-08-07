@@ -7,6 +7,7 @@ import json
 from typing import Dict, Any, Optional
 from datetime import datetime
 import os
+from pathlib import Path
 
 def setup_logging(level: str = "INFO") -> logging.Logger:
     """Setup logging configuration"""
